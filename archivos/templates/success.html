@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro Exitoso</title>
+</head>
+<body>
+    <h2>Registro Exitoso</h2>
+    <p>El usuario ha sido registrado exitosamente.</p>
+
+    <h3>Lista de Usuarios Registrados</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>Usuario</th>
+                <th>Cargo</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for usuario in usuarios %}
+            <tr>
+                <td>{{ usuario.nombre }}</td>
+                <td>{{ usuario.apellido }}</td>
+                <td>{{ usuario.email }}</td>
+                <td>{{ usuario.usuario }}</td>
+                <td>{{ usuario.cargo }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+    </table>
+</body>
+</html>
