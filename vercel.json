@@ -1,15 +1,16 @@
+
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "bitacora/wsgi.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "bitacora/wsgi.py"
-      }
-    ]
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "bitacora/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "bitacora/wsgi.py"
+    }
+  ]
+}
