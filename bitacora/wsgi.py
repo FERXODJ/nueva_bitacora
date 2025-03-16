@@ -15,4 +15,5 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bitacora.settings')
 
 application = get_wsgi_application()
 
-app = application 
+# Exponer la variable `app` para Vercel
+app = application
