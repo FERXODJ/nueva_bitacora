@@ -3,8 +3,7 @@
     "builds": [
       {
         "src": "bitacora/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb" }
+        "use": "@vercel/python"
       }
     ],
     "routes": [
@@ -12,5 +11,8 @@
         "src": "/(.*)",
         "dest": "bitacora/wsgi.py"
       }
-    ]
+    ],
+    "build": {
+      "command": "./.vercel_build.sh && pip install -r requirements.txt"
+    }
   }
